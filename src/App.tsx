@@ -70,6 +70,8 @@ export default function App() {
             <img 
               src={LOGO_URL} 
               alt="Smażalnia RYBA" 
+              width="48"
+              height="48"
               className="w-12 h-12 rounded-full border-2 border-sunshine group-hover:rotate-12 transition-transform shadow-sm"
               referrerPolicy="no-referrer"
             />
@@ -147,6 +149,7 @@ export default function App() {
             alt="Pyszna ryba" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-ocean/40 backdrop-blur-[2px]"></div>
         </div>
@@ -229,6 +232,9 @@ export default function App() {
               <img 
                 src={GALLERY_IMAGES[4]} 
                 alt="Wnętrze smażalni" 
+                loading="lazy"
+                width="600"
+                height="400"
                 className="rounded-3xl border-8 border-white shadow-2xl skew-y-1 transform hover:skew-y-0 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -284,6 +290,7 @@ export default function App() {
                 <img 
                   src={img} 
                   alt={`Potrawa ${idx}`} 
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
@@ -436,7 +443,14 @@ export default function App() {
       <footer className="bg-white py-12 border-t-8 border-sunshine">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8 text-ocean">
           <div className="flex items-center gap-4">
-            <img src={LOGO_URL} alt="RYBA" className="w-16 h-16 rounded-full border-2 border-sunshine" />
+            <img 
+              src={LOGO_URL} 
+              alt="RYBA" 
+              width="64"
+              height="64"
+              loading="lazy"
+              className="w-16 h-16 rounded-full border-2 border-sunshine" 
+            />
             <div>
               <h3 className="text-2xl font-display leading-none">Smażalnia RYBA</h3>
               <p className="text-sm font-bold opacity-60">Ustronie Morskie</p>
