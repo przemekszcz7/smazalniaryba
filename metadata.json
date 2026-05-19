@@ -1,0 +1,8 @@
+{
+  "name": "Smażalnia RYBA - Ustronie Morskie",
+  "description": "Smażalnia z tradycjami w Ustroniu Morskim. Świeże ryby z patelni i z pieca w radosnym, nadmorskim klimacie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
